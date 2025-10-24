@@ -1,0 +1,38 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "files": [],
+  "references": [
+    {
+      "path": "./.nuxt/tsconfig.app.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.server.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.shared.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.node.json"
+    }
+  ],
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "@public/*": ["./public/*"],
+      "@server/*": ["../frontend-challenges/server/*"],
+      
+      "@components/*": ["./app/components/*"],
+      "@assets/*": ["./app/assets/*"],
+      "@content/*": ["./app/content/*"],
+      "@layouts/*": ["./app/layouts/*"],
+      "@pages/*": ["./app/pages/*"],
+      "@plugins/*": ["./app/plugins/*"],      
+      "@composables/*": ["./app/composables/*"],
+      "@stores/*": ["./app/stores/*"],
+      "@utils/*": ["./app/utils/*"],
+    }
+  }
+}

@@ -1,0 +1,89 @@
+
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+
+:root {
+
+  /* COLORS */
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* Font */
+  --font-notosans: 'Noto Sans', sans-serif;
+
+  /* Weather App - */
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-bricolage: 'Bricolage Grotesque', sans-serif;
+
+  --section-px: 1rem;
+  --section-px-sm: 2rem;
+  --section-px-lg: 3rem;
+
+  /* Beginner */
+  /* Recipe Page */
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+
+  /* Intermediate */
+  /* Browser Extension Management - UI */
+  /* Neutral */
+  --neutral-900: hsl(227, 75%, 14%);
+  --neutral-800: hsl(226, 25%, 17%);
+  --neutral-700: hsl(225, 23%, 24%);
+  --neutral-600: hsl(226, 11%, 37%);
+  --neutral-300: hsl(0, 0%, 78%);
+  --neutral-200: hsl(217, 61%, 90%);
+  --neutral-100: hsl(0, 0%, 93%);
+  --neutral-0: #fBFDFE;
+
+    /* Red */
+    --red-400: hsl(3, 86%, 64%);
+    --red-500: hsl(3, 71%, 56%);
+    --red-700: hsl(3, 77%, 44%); 
+
+  /* Weather App */
+  --weather-neutral-900: hsl(243, 96%, 9%);
+  --weather-neutral-800: hsl(243, 27%, 20%);
+  --weather-neutral-700: hsl(243, 23%, 24%);
+  --weather-neutral-600: hsl(243, 23%, 30%);
+  --weather-neutral-300: hsl(240, 6%, 70%);
+  --weather-neutral-200: hsl(250, 6%, 84%);
+  --weather-neutral-0: hsl(0, 0%, 100%);
+
+  --weather-orange-500: hsl(28, 100%, 52%);
+
+  --weather-blue-500: hsl(233, 67%, 56%);
+  --weather-blue-700: hsl(248, 70%, 36%);
+    
+    
+
+  --light-bg-1: #EBF2FC;
+  --light-bg-2: #EEF8F9;
+
+  --dark-bg-1: #040918;
+  --dark-bg-2: #091540;
+
+  --border-gray: #D1D5DB;
+
+    
+    
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
