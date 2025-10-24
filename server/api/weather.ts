@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
 //     // const windUnit = query.wind_unit || 'kmh';
 //     // const precUnit = query.prec_unit || 'mm';
 
-	const url = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m";
+	const url = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m,weather_code&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&daily=temperature_2m_max,temperature_2m_min,weather_code";
     try {
         const res = await fetch(url);
         if (!res.ok) {

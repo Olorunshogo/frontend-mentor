@@ -25,7 +25,7 @@ export default defineEventHandler(async (event) => {
     } catch (error) {
         return createError ({
             statusCode: 500,
-            statusMessage: "Failed to load geolocation data"
+            statusMessage: "Failed to Kanye quotes"
         })
     }
 

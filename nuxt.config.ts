@@ -1,6 +1,7 @@
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
+import autoprefixer from "autoprefixer";
 
 
 export default defineNuxtConfig({
