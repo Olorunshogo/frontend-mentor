@@ -13,6 +13,7 @@ export interface Extension {
 export interface WeatherData {
   latitude: number;
   longitude: number;
+  generationtime_ms: number;
   elevation: number;
   utc_offset_seconds: number;
   timezone: string;

@@ -1,14 +1,7 @@
 
-# # Frontend Mentor - Simple Omelette Recipe Page
+# Frontend Mentor - Simple Omelette Recipe Page
 A clean, minimal, and responsive recipe layout that presents a delicious omelette recipe in a user-friendly format.
 
-> 🧑‍🍳 **Live Demo**: [View Recipe Page](https://frontend-mentor-18k6.vercel.app/beginner/recipe-page)
-> 🔗 **Challenge**: [Frontend Mentor - Recipe Page Challenge](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
-
-
->🔗 Solution Url: [GitHub](https://github.com/Olorunshogo/frontend-mentor/blob/main/app/pages/beginner/recipe-page.vue)
->💻 View Live [Browser Extension Manager UI](https://frontend-mentor-18k6.vercel.app/beginner/recipe-page)
->View the challenge on 👉 [Frontend Mentor - Recipe Page Challenge](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
 
 
 ## 📌 Table of contents
@@ -22,18 +15,10 @@ A clean, minimal, and responsive recipe layout that presents a delicious omelett
 - [🧠 What I Learned](#what-i-learned)
 
 
-### The challenge
-Users should be able to:
-
-- Toggle extensions between active and inactive states
-- Filter active and inactive extensions
-- Remove extensions from the list
-- Select their color theme
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+## Overview
 
 
-### Overview
+### The Challenge
 This project presents a **single recipe page** with beautifully structured content including:
 - Introduction
 - Prep time summary
@@ -52,6 +37,21 @@ Built with accessibility and responsive design in mind, this page is suitable fo
 ![Screenshot on laptop](https://github.com/Olorunshogo/frontend-mentor/blob/main/public/images/beginner/recipe-page/laptop_screenshot.png)
 
 
+### Links
+> 🧑‍🍳 **Live Demo**: [View Recipe Page](https://frontend-mentor-18k6.vercel.app/beginner/recipe-page)
+> 🔗 **Challenge**: [Frontend Mentor - Recipe Page Challenge](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
+>🔗 **Solution Url**: [GitHub](https://github.com/Olorunshogo/frontend-mentor/blob/main/app/pages/beginner/recipe-page.vue)
+
+
+## My Process
+
+
+### Tech Stack
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Nuxt Image](https://image.nuxt.com/) - Image Optimization
+- [Vercel](https://vercel.com/) - Deployment
+
+
 ### Features
 - 🧾 Structured and semantic layout with ingredients, steps, and nutrition info
 - 🌗 Clean, minimal design that adapts to any screen size
@@ -61,15 +61,9 @@ Built with accessibility and responsive design in mind, this page is suitable fo
 - ⚡ Fast and lightweight (no JavaScript interactivity required)
 
 
-### Tech Stack
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Nuxt Image](https://image.nuxt.com/) - Image Optimization
-- [Vercel](https://vercel.com/) - Deployment
-
-
 ### What I Learned
 
-- Setting up SEO metadata using useSeoMeta and useHead
+- Setting up SEO metadata using `useSeoMeta `and `useHead`
 - Structuring content semantically with headings, lists, and tables
 - Responsive design using Tailwind CSS utility classes
 - Image optimization and accessibility best practices with NuxtImg

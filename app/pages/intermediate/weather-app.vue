@@ -205,6 +205,13 @@ const dayOptions = computed(() => {
   }));
 });
 
+// Ensure selectedDayIndex is within bounds when dayOptions changes
+watch(dayOptions, (newOptions) => {
+  if (selectedDayIndex.value >= newOptions.length) {
+    selectedDayIndex.value = Math.max(0, newOptions.length - 1);
+  }
+});
+
 const selectedHourlyForecast = computed(() => {
   if (!weatherData.value?.hourly) return [];
   const start = selectedDayIndex.value * 24;
@@ -347,7 +354,7 @@ const showDebug = ref(false);
 
               <!-- Temperature, humidity, wind and precipitation -->
               <div
-                class="grid grid-cols-2 lg:grid-cols-4 gap-4 *:flex *:flex-col *:gap-4 *:p-4 *:bg-(--weather-neutral-700) *:rounded-md *:shadow-md *:text-(--white) *:w-full *:max-w-[200px]"
+                class="grid grid-cols-2 sm:grid-cols-4 *:flex *:flex-col *:gap-4 *:p-4 *:bg-(--weather-neutral-700) *:rounded-md *:shadow-md *:text-(--white) *:w-full *:max-w-[200px]"
               >
                 <!-- Optionally add extra metrics like humidity, wind, precipitation -->
                 <div>
@@ -416,6 +423,7 @@ const showDebug = ref(false);
                   </div>
                 </div>
               </div>
+              
             </div>
 
             <!-- Right Section: Hourly Forecast -->
@@ -435,11 +443,7 @@ const showDebug = ref(false);
                   :ui="{ content: 'w-56' }"
                 >
                   <UButton
-                    :label="
-                      dayOptions[selectedDayIndex]
-                        ? dayOptions[selectedDayIndex].label
-                        : 'Select Day'
-                    "
+                    :label="dayOptions[selectedDayIndex]?.label ?? 'Select Day'"
                     color="neutral"
                     variant="outline"
                     icon="i-lucide-calendar"
@@ -499,11 +503,27 @@ const showDebug = ref(false);
           </button>
         </div>
 
-        <div class="p-4 grid gap-2 grid-cols-2 md:grid-cols-4 text-xs">
-          <div>
-            <strong>Latitude:</strong> {{ weatherData?.latitude }},
-            <strong>Latitude:</strong> {{ weatherData?.longitude }}
-          </div>
+        <div class="flex flex-wrap items-center gap-4 text-xs p-4">
+          <span>
+            <strong>Latitude: </strong> {{ weatherData?.latitude }},
+          </span>
+          <span>
+            <strong>Latitude: </strong> {{ weatherData?.longitude }}
+          </span>
+          <span>
+            <strong>Generationtime_ms:</strong> {{ weatherData?.generationtime_ms }}
+          </span>
+          <span>
+            <strong>Utc_offset_seconds: </strong> {{ weatherData?.utc_offset_seconds }}
+          </span>
+          <span>
+            <strong>Timezone: {{ weatherData?.timezone }}</strong>,
+            <strong>Timezone: {{ weatherData?.timezone_abbreviation }}</strong>
+          </span>
+          <span>
+            <strong>Elevation: </strong> {{ weatherData?.elevation }}
+          </span>
+
         </div>
 
         <div class="p-4 border-t border-gray-600 max-h-[300px] overflow-auto">
